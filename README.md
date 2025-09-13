@@ -14,3 +14,5 @@ Files included:
     ![image alt](https://github.com/rachit1199/Interactive-Menu-Website/blob/aa66c41fa68297c24a0e1de0c3f0e871c3431db8/Screenshot1.jpg)
 
     ![image alt](https://github.com/rachit1199/Interactive-Menu-Website/blob/70944641c805dbb8e7d516737298afd95cc96107/Screenshot2.jpg)
+
+    ![image alt](https://github.com/rachit1199/Interactive-Menu-Website/blob/d45d2c39619ffe7d719bf81165240139aa8a8d32/Screenshot3.jpg)
