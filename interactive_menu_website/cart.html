@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Orbit Cafe — Cart</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1><a href="index.html">Orbit Cafe</a></h1>
+      <nav class="nav">
+        <a href="index.html">Menu</a>
+        <a href="cart.html" class="active">Cart</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Your Cart</h2>
+    <div id="cart-list" class="cart-list"></div>
+
+    <form id="checkout-form" class="checkout-form" novalidate>
+      <h3>Checkout</h3>
+      <label>
+        Full name
+        <input type="text" id="fullname" name="fullname" required minlength="3">
+      </label>
+      <label>
+        Phone or Email
+        <input type="text" id="contact" name="contact" required>
+      </label>
+      <label>
+        Payment method
+        <select id="payment" name="payment" required>
+          <option value="">Choose...</option>
+          <option>Card</option>
+          <option>UPI</option>
+          <option>Cash on delivery</option>
+        </select>
+      </label>
+      <button type="submit">Place Order</button>
+    </form>
+  </main>
+
+
+<div id="order-modal" class="modal" hidden>
+  <div class="modal-content">
+    <h3>Order placed!</h3>
+    <p id="order-summary"></p>
+    <button id="close-modal">Close</button>
+  </div>
+</div>
+
+
+  <script src="js/main.js"></script>
+</body>
+</html>

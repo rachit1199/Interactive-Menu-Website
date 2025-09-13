@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Orbit Cafe — Menu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* internal CSS to demonstrate both external + internal usage */
+    header .tagline { font-style: italic; opacity: 0.9; }
+    @media (max-width:600px) {
+      .hero { padding: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 id="brand" tabindex="0">Orbit Cafe</h1>
+      <p class="tagline">Taste the cosmos — a small story with every bite.</p>
+      <nav class="nav">
+        <a href="index.html" class="active">Menu</a>
+        <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+        <a href="about.html">About</a>
+        <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container" id="hero">
+      <div>
+        <h2>Today's Specials</h2>
+        <p>Browse, taste, add to cart — the experience unfolds as you interact.</p>
+      </div>
+      <div class="search-wrap">
+        <input id="search" placeholder="Search menu (try typing 'latte')" />
+      </div>
+    </section>
+
+    <section class="menu container" id="menu">
+      <!-- Menu will be populated by JavaScript -->
+    </section>
+
+    <section class="story container">
+      <h3>Story Corner</h3>
+      <p id="story-text">Orbit Cafe began as a tiny stall on a rainy evening — hover on any item to reveal its little tale.</p>
+    </section>
+  </main>
+
+  <aside id="toast" class="toast" aria-live="polite"></aside>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© Orbit Cafe — Designed for the interactive web demo.</small>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
